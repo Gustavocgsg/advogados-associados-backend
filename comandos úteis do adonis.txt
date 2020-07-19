@@ -1,0 +1,24 @@
+===================================================
+Inicializa os três arquivos do model
+===================================================
+
+adonis make:model contact -c -m
+
+adonis make:model news -c -m
+
+adonis make:model legislation -c -m
+
+adonis make:model services -c -m
+
+adonis make:model home -c -m
+
+===================================================
+Comandos básicos para gerenciar as migrations
+===================================================
+adonis serve --dev
+
+adonis migration:run
+
+adonis migration:rollback
+
+adonis migration:status
