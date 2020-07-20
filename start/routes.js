@@ -19,13 +19,15 @@ Route.get('/', () => {
 Route.group(() => {
 
     // Rotas de cadastro de Usuário CRUD
-    Route.post('/users','UserController.store')
+    //Route.post('/users','UserController.store')
     Route.get('/users','UserController.index')
     Route.delete('/users/:id','UserController.destroy')
     Route.get('/users/:id','UserController.show')
     Route.put('/users/:id','UserController.update')
 
 }).middleware(['auth'])
+
+Route.post('/users','UserController.store')
 
 // Rotas de envio de email POSTs, GETs
 Route.post('/contacts','ContactController.store')
