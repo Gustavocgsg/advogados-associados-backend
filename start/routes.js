@@ -25,7 +25,7 @@ Route.group(() => {
     Route.get('/users/:id','UserController.show')
     Route.put('/users/:id','UserController.update')
 
-}).middleware(['auth'])
+})//.middleware(['auth'])
 
 Route.post('/users','UserController.store')
 
@@ -39,7 +39,7 @@ Route.group(() => {
     Route.delete('/contacts/:id','ContactController.destroy')
     Route.put('/contacts/:id','ContactController.update')
 
-}).middleware(['auth'])
+})//.middleware(['auth'])
 
 Route.group(() => {
 
@@ -53,7 +53,7 @@ Route.group(() => {
     //Rota para o arquivo upload
     Route.post('/news/:id/images', 'NewsController.upload')
 
-}).middleware(['auth'])
+})//.middleware(['auth'])
 
 Route.get('/news','NewsController.index')
 Route.get('/news/:id','NewsController.show')
@@ -66,7 +66,7 @@ Route.group(() => {
     Route.get('/practices/:id','PracticeController.show')
     Route.delete('/practices/:id','PracticeController.destroy')
     Route.put('/practices/:id','PracticeController.update')
-}).middleware(['auth'])
+})//.middleware(['auth'])
 
 Route.get('/practices','PracticeController.index')
 
@@ -77,7 +77,7 @@ Route.group(() => {
     Route.get('/services/:id','ServicesController.show')
     Route.delete('/services/:id','ServicesController.destroy')
     Route.put('/services/:id','ServicesController.update')
-}).middleware(['auth'])
+})//.middleware(['auth'])
 
 Route.get('/services','ServicesController.index')
 
@@ -89,7 +89,7 @@ Route.group(() => {
     Route.get('/abouts/:id','AboutController.show')
     Route.delete('/abouts/:id','AboutController.destroy')
     Route.put('/abouts/:id','AboutController.update')
-}).middleware(['auth'])
+})//.middleware(['auth'])
 
 Route.get('/abouts','AboutController.index')
 
